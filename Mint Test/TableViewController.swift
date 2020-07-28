@@ -7,10 +7,21 @@
 //
 
 import UIKit
+import RealmSwift
 
 class TableViewController: UITableViewController {
 
     @IBOutlet weak var spinner: UIActivityIndicatorView!
+    
+    
+    var gitArray : Results<Commit>?
+    
+    lazy var refresh: UIRefreshControl = {
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(handleRefresh(_:)), for: .valueChanged)
+        return refreshControl
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         spinner?.startAnimating()
@@ -24,7 +35,7 @@ class TableViewController: UITableViewController {
             if responseModel.success{
                 
             }else{
-                
+                self.presentOkAlert(responseModel.title ?? "Error", responseModel.generalMessage ?? "")
             }
             self.spinner?.stopAnimating()
             self.spinner?.isHidden = true
@@ -41,6 +52,21 @@ class TableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return 0
+    }
+    
+    @objc private func handleRefresh(_ refreshControl: UIRefreshControl) {
+        GitCaller.getCommit(){
+            responseModel in
+            if responseModel.success{
+                self.tableView.reloadData()
+                refreshControl.endRefreshing()
+            }else{
+                self.presentOkAlert(responseModel.title ?? "Error", responseModel.generalMessage ?? "")
+                self.tableView.reloadData()
+                refreshControl.endRefreshing()
+            }
+        }
+        
     }
 
     /*

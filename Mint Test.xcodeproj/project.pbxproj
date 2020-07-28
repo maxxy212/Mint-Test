@@ -20,6 +20,7 @@
 		CFB47F4D24D0430100EE047C /* CommitMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB47F4C24D0430100EE047C /* CommitMessage.swift */; };
 		CFB47F5124D044F000EE047C /* NetworkResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB47F5024D044F000EE047C /* NetworkResponseModel.swift */; };
 		CFB47F5324D0474100EE047C /* GitCaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB47F5224D0474100EE047C /* GitCaller.swift */; };
+		CFB47F5524D053F700EE047C /* UIViewControllerExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB47F5424D053F700EE047C /* UIViewControllerExtention.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		CFB47F4C24D0430100EE047C /* CommitMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitMessage.swift; sourceTree = "<group>"; };
 		CFB47F5024D044F000EE047C /* NetworkResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResponseModel.swift; sourceTree = "<group>"; };
 		CFB47F5224D0474100EE047C /* GitCaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitCaller.swift; sourceTree = "<group>"; };
+		CFB47F5424D053F700EE047C /* UIViewControllerExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtention.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 				CF4547C024D0296800E2F88A /* Assets.xcassets */,
 				CF4547C224D0296800E2F88A /* LaunchScreen.storyboard */,
 				CF4547C524D0296800E2F88A /* Info.plist */,
+				CFB47F5424D053F700EE047C /* UIViewControllerExtention.swift */,
 			);
 			path = "Mint Test";
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFB47F4624D03D8100EE047C /* TableViewCell.swift in Sources */,
+				CFB47F5524D053F700EE047C /* UIViewControllerExtention.swift in Sources */,
 				CFB47F5124D044F000EE047C /* NetworkResponseModel.swift in Sources */,
 				CFB47F4B24D0420200EE047C /* Commit.swift in Sources */,
 				CF4547BC24D0296700E2F88A /* ViewController.swift in Sources */,
