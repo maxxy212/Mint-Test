@@ -19,6 +19,16 @@ class TableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        GitCaller.getCommit(){
+            responseModel in
+            if responseModel.success{
+                
+            }else{
+                
+            }
+            self.spinner?.stopAnimating()
+            self.spinner?.isHidden = true
+        }
     }
 
     // MARK: - Table view data source
