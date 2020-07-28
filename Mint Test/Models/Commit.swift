@@ -26,5 +26,9 @@ class Commit: Object, Mappable {
         node_id <- map["node_id"]
         commit <- map["commit"]
     }
+    
+    override static func primaryKey() -> String? {
+        return "sha"
+    }
 }
 
