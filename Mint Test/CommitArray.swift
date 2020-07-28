@@ -7,3 +7,20 @@
 //
 
 import Foundation
+import SwiftyJSON
+import RealmSwift
+import ObjectMapper
+
+
+class CommitArray: Object, Mappable {
+    
+    let data = List<Commit>()
+    convenience required init?(map: Map) {
+        self.init()
+    }
+    
+    func mapping(map: Map) {
+        <#code#>
+    }
+    
+}

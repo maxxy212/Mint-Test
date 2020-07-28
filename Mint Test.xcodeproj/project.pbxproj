@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,11 @@
 		CF4547BF24D0296700E2F88A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF4547BD24D0296700E2F88A /* Main.storyboard */; };
 		CF4547C124D0296800E2F88A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF4547C024D0296800E2F88A /* Assets.xcassets */; };
 		CF4547C424D0296800E2F88A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF4547C224D0296800E2F88A /* LaunchScreen.storyboard */; };
+		CFB47F4424D03D5100EE047C /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB47F4324D03D5100EE047C /* TableViewController.swift */; };
+		CFB47F4624D03D8100EE047C /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB47F4524D03D8100EE047C /* TableViewCell.swift */; };
+		CFB47F4924D0410000EE047C /* CommitArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB47F4824D0410000EE047C /* CommitArray.swift */; };
+		CFB47F4B24D0420200EE047C /* Commit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB47F4A24D0420200EE047C /* Commit.swift */; };
+		CFB47F4D24D0430100EE047C /* CommitMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB47F4C24D0430100EE047C /* CommitMessage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +33,11 @@
 		CF4547C024D0296800E2F88A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF4547C324D0296800E2F88A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF4547C524D0296800E2F88A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFB47F4324D03D5100EE047C /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		CFB47F4524D03D8100EE047C /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		CFB47F4824D0410000EE047C /* CommitArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitArray.swift; sourceTree = "<group>"; };
+		CFB47F4A24D0420200EE047C /* Commit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commit.swift; sourceTree = "<group>"; };
+		CFB47F4C24D0430100EE047C /* CommitMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitMessage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +58,6 @@
 				196CEAE4D537B9639043D414 /* Pods-Mint Test.debug.xcconfig */,
 				AA43600FCC824F2072ADCC99 /* Pods-Mint Test.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -73,15 +82,28 @@
 		CF4547B624D0296700E2F88A /* Mint Test */ = {
 			isa = PBXGroup;
 			children = (
-				CF4547B724D0296700E2F88A /* AppDelegate.swift */,
-				CF4547B924D0296700E2F88A /* SceneDelegate.swift */,
+				CFB47F4724D0404B00EE047C /* StartUpFiles */,
 				CF4547BB24D0296700E2F88A /* ViewController.swift */,
 				CF4547BD24D0296700E2F88A /* Main.storyboard */,
+				CFB47F4824D0410000EE047C /* CommitArray.swift */,
+				CFB47F4A24D0420200EE047C /* Commit.swift */,
+				CFB47F4C24D0430100EE047C /* CommitMessage.swift */,
+				CFB47F4524D03D8100EE047C /* TableViewCell.swift */,
+				CFB47F4324D03D5100EE047C /* TableViewController.swift */,
 				CF4547C024D0296800E2F88A /* Assets.xcassets */,
 				CF4547C224D0296800E2F88A /* LaunchScreen.storyboard */,
 				CF4547C524D0296800E2F88A /* Info.plist */,
 			);
 			path = "Mint Test";
+			sourceTree = "<group>";
+		};
+		CFB47F4724D0404B00EE047C /* StartUpFiles */ = {
+			isa = PBXGroup;
+			children = (
+				CF4547B724D0296700E2F88A /* AppDelegate.swift */,
+				CF4547B924D0296700E2F88A /* SceneDelegate.swift */,
+			);
+			path = StartUpFiles;
 			sourceTree = "<group>";
 		};
 		E2A6E4017307E29EB9FC120A /* Frameworks */ = {
@@ -207,9 +229,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFB47F4924D0410000EE047C /* CommitArray.swift in Sources */,
+				CFB47F4624D03D8100EE047C /* TableViewCell.swift in Sources */,
+				CFB47F4B24D0420200EE047C /* Commit.swift in Sources */,
 				CF4547BC24D0296700E2F88A /* ViewController.swift in Sources */,
+				CFB47F4D24D0430100EE047C /* CommitMessage.swift in Sources */,
 				CF4547B824D0296700E2F88A /* AppDelegate.swift in Sources */,
 				CF4547BA24D0296700E2F88A /* SceneDelegate.swift in Sources */,
+				CFB47F4424D03D5100EE047C /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

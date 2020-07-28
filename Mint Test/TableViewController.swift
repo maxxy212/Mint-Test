@@ -10,9 +10,10 @@ import UIKit
 
 class TableViewController: UITableViewController {
 
+    @IBOutlet weak var spinner: UIActivityIndicatorView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        spinner?.startAnimating()
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
