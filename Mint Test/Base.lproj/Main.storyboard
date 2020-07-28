@@ -37,7 +37,7 @@
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </activityIndicatorView>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="r1o-tf-35i" customClass="TableViewCell" customModule="Mint_Test" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="UITableViewCell" id="r1o-tf-35i" customClass="TableViewCell" customModule="Mint_Test" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="r1o-tf-35i" id="mzE-gj-IuQ">
@@ -65,6 +65,10 @@
                                         <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="9SA-lW-vaf" secondAttribute="trailing" constant="20" symbolic="YES" id="zVc-iu-cZe"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="message" destination="9SA-lW-vaf" id="lpo-Ak-Zw2"/>
+                                    <outlet property="number" destination="VRg-YJ-na3" id="Bkd-Ee-Bc6"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
