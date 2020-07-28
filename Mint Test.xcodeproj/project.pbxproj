@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		456AAAFFCE17E13472F36D40 /* Pods_Mint_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01028DE236617729F859BBD5 /* Pods_Mint_Test.framework */; };
 		CF4547B824D0296700E2F88A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4547B724D0296700E2F88A /* AppDelegate.swift */; };
 		CF4547BA24D0296700E2F88A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4547B924D0296700E2F88A /* SceneDelegate.swift */; };
 		CF4547BC24D0296700E2F88A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4547BB24D0296700E2F88A /* ViewController.swift */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		01028DE236617729F859BBD5 /* Pods_Mint_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mint_Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		196CEAE4D537B9639043D414 /* Pods-Mint Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mint Test.debug.xcconfig"; path = "Target Support Files/Pods-Mint Test/Pods-Mint Test.debug.xcconfig"; sourceTree = "<group>"; };
+		AA43600FCC824F2072ADCC99 /* Pods-Mint Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mint Test.release.xcconfig"; path = "Target Support Files/Pods-Mint Test/Pods-Mint Test.release.xcconfig"; sourceTree = "<group>"; };
 		CF4547B424D0296700E2F88A /* Mint Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mint Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF4547B724D0296700E2F88A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF4547B924D0296700E2F88A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				456AAAFFCE17E13472F36D40 /* Pods_Mint_Test.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		574F38C7558CF311BD6DA06B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				196CEAE4D537B9639043D414 /* Pods-Mint Test.debug.xcconfig */,
+				AA43600FCC824F2072ADCC99 /* Pods-Mint Test.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CF4547AB24D0296700E2F88A = {
 			isa = PBXGroup;
 			children = (
 				CF4547B624D0296700E2F88A /* Mint Test */,
 				CF4547B524D0296700E2F88A /* Products */,
+				574F38C7558CF311BD6DA06B /* Pods */,
+				E2A6E4017307E29EB9FC120A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +84,14 @@
 			path = "Mint Test";
 			sourceTree = "<group>";
 		};
+		E2A6E4017307E29EB9FC120A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				01028DE236617729F859BBD5 /* Pods_Mint_Test.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CF4547C824D0296800E2F88A /* Build configuration list for PBXNativeTarget "Mint Test" */;
 			buildPhases = (
+				4B6494707598AEBBB1F83222 /* [CP] Check Pods Manifest.lock */,
 				CF4547B024D0296700E2F88A /* Sources */,
 				CF4547B124D0296700E2F88A /* Frameworks */,
 				CF4547B224D0296700E2F88A /* Resources */,
+				98973BA2A124EF0C989B6A69 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4B6494707598AEBBB1F83222 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Mint Test-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98973BA2A124EF0C989B6A69 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mint Test/Pods-Mint Test-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mint Test/Pods-Mint Test-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Mint Test/Pods-Mint Test-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CF4547B024D0296700E2F88A /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		CF4547C924D0296800E2F88A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 196CEAE4D537B9639043D414 /* Pods-Mint Test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +370,7 @@
 		};
 		CF4547CA24D0296800E2F88A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA43600FCC824F2072ADCC99 /* Pods-Mint Test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
