@@ -17,11 +17,11 @@ class Commit: Object, Mappable {
     @objc dynamic var node_id = ""
     @objc dynamic var commit: CommitMessage?
     
-    convenience required init?(map: Map) {
+    convenience required init?(map: ObjectMapper.Map) {
         self.init()
     }
     
-    func mapping(map: Map) {
+    func mapping(map: ObjectMapper.Map) {
         sha <- map["sha"]
         node_id <- map["node_id"]
         commit <- map["commit"]

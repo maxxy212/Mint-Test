@@ -14,11 +14,25 @@ class TableViewController: UITableViewController {
     @IBOutlet weak var spinner: UIActivityIndicatorView!
     var gitArray : Results<Commit>?
     
-    lazy var refresh: UIRefreshControl = {
-        let refreshControl = UIRefreshControl()
-        refreshControl.addTarget(self, action: #selector(handleRefresh(_:)), for: .valueChanged)
-        return refreshControl
-    }()
+    let mintViewModel = MintViewModel()
+    
+    var errorMessage:String = ""{
+        didSet{
+            if errorMessage != ""{
+                self.presentOkAlert("Error", errorMessage)
+            }
+        }
+    }
+    
+    var isCallSuccess = false{
+        didSet{
+            if isCallSuccess{
+                self.spinner?.stopAnimating()
+                self.spinner?.isHidden = true
+                self.tableView.reloadData()
+            }
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,17 +41,13 @@ class TableViewController: UITableViewController {
         self.tableView.rowHeight = UITableView.automaticDimension
         self.tableView.delegate = self
         self.tableView.dataSource = self
-        if #available(iOS 10.0, *) {
-            self.tableView.refreshControl = refresh
-        } else {
-            self.tableView.addSubview(refresh)
-        }
         
         do{
             let realm = try Realm()
             gitArray = realm.objects(Commit.self)
         }catch{}
         
+        setupBindings()
     }
     
     override func viewDidLayoutSubviews() {
@@ -53,29 +63,21 @@ class TableViewController: UITableViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        if let size = gitArray?.count {
-            if size < 1 {
-                loadData()
-            }
-        }else{
-            loadData()
+        loadData()
+    }
+    
+    func setupBindings(){
+        mintViewModel.success.bind { [weak self] value in
+            self?.isCallSuccess = value
+        }
+        mintViewModel.errMessage.bind { [weak self] msg in
+            self?.errorMessage = msg
         }
     }
     
     func loadData() {
         spinner?.startAnimating()
-        
-         GitCaller.getCommit(){
-                   responseModel in
-                   if responseModel.success{
-                       
-                   }else{
-                       self.presentOkAlert(responseModel.title ?? "Error", responseModel.generalMessage ?? "")
-                   }
-                   self.spinner?.stopAnimating()
-                   self.spinner?.isHidden = true
-               }
-               
+        mintViewModel.getCommitMessages()
     }
 
     // MARK: - Table view data source
@@ -89,22 +91,6 @@ class TableViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of rows
         return gitArray?.count ?? 0
     }
-    
-    @objc private func handleRefresh(_ refreshControl: UIRefreshControl) {
-        GitCaller.getCommit(){
-            responseModel in
-            if responseModel.success{
-                self.tableView.reloadData()
-                refreshControl.endRefreshing()
-            }else{
-                self.presentOkAlert(responseModel.title ?? "Error", responseModel.generalMessage ?? "")
-                self.tableView.reloadData()
-                refreshControl.endRefreshing()
-            }
-        }
-        
-    }
-
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let git = gitArray?[indexPath.row]

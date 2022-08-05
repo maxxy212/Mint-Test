@@ -16,11 +16,11 @@ class CommitMessage: Object, Mappable {
     @objc dynamic var message = ""
     @objc dynamic var url = ""
     
-    convenience required init?(map: Map) {
+    convenience required init?(map: ObjectMapper.Map) {
         self.init()
     }
     
-    func mapping(map: Map) {
+    func mapping(map: ObjectMapper.Map) {
         message <- map["message"]
         url <- map["url"]
     }

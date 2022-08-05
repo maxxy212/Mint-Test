@@ -10,7 +10,6 @@
 		456AAAFFCE17E13472F36D40 /* Pods_Mint_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01028DE236617729F859BBD5 /* Pods_Mint_Test.framework */; };
 		CF4547B824D0296700E2F88A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4547B724D0296700E2F88A /* AppDelegate.swift */; };
 		CF4547BA24D0296700E2F88A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4547B924D0296700E2F88A /* SceneDelegate.swift */; };
-		CF4547BC24D0296700E2F88A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4547BB24D0296700E2F88A /* ViewController.swift */; };
 		CF4547BF24D0296700E2F88A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF4547BD24D0296700E2F88A /* Main.storyboard */; };
 		CF4547C124D0296800E2F88A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF4547C024D0296800E2F88A /* Assets.xcassets */; };
 		CF4547C424D0296800E2F88A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF4547C224D0296800E2F88A /* LaunchScreen.storyboard */; };
@@ -19,9 +18,32 @@
 		CFB47F4B24D0420200EE047C /* Commit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB47F4A24D0420200EE047C /* Commit.swift */; };
 		CFB47F4D24D0430100EE047C /* CommitMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB47F4C24D0430100EE047C /* CommitMessage.swift */; };
 		CFB47F5124D044F000EE047C /* NetworkResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB47F5024D044F000EE047C /* NetworkResponseModel.swift */; };
-		CFB47F5324D0474100EE047C /* GitCaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB47F5224D0474100EE047C /* GitCaller.swift */; };
 		CFB47F5524D053F700EE047C /* UIViewControllerExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB47F5424D053F700EE047C /* UIViewControllerExtention.swift */; };
+		CFDA6685289D2FEE00B88067 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDA6684289D2FEE00B88067 /* Box.swift */; };
+		CFDA6687289D30AB00B88067 /* MintViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDA6686289D30AB00B88067 /* MintViewModel.swift */; };
+		CFDA668C289D319700B88067 /* MintProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDA668B289D319700B88067 /* MintProtocol.swift */; };
+		CFDA668E289D31DE00B88067 /* MintService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDA668D289D31DE00B88067 /* MintService.swift */; };
+		CFDA669F289D3D0800B88067 /* TableViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDA669E289D3D0800B88067 /* TableViewControllerTest.swift */; };
+		CFDA66B3289D42B000B88067 /* UILaunchTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDA66B1289D423900B88067 /* UILaunchTest.swift */; };
+		CFDA66B6289D43BD00B88067 /* MintViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDA66B5289D43BD00B88067 /* MintViewModelTest.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CFDA6697289D391900B88067 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF4547AC24D0296700E2F88A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF4547B324D0296700E2F88A;
+			remoteInfo = "Mint Test";
+		};
+		CFDA66AC289D421500B88067 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF4547AC24D0296700E2F88A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF4547B324D0296700E2F88A;
+			remoteInfo = "Mint Test";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		01028DE236617729F859BBD5 /* Pods_Mint_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mint_Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -30,7 +52,6 @@
 		CF4547B424D0296700E2F88A /* Mint Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mint Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF4547B724D0296700E2F88A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF4547B924D0296700E2F88A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CF4547BB24D0296700E2F88A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CF4547BE24D0296700E2F88A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CF4547C024D0296800E2F88A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF4547C324D0296800E2F88A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -40,8 +61,16 @@
 		CFB47F4A24D0420200EE047C /* Commit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commit.swift; sourceTree = "<group>"; };
 		CFB47F4C24D0430100EE047C /* CommitMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitMessage.swift; sourceTree = "<group>"; };
 		CFB47F5024D044F000EE047C /* NetworkResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResponseModel.swift; sourceTree = "<group>"; };
-		CFB47F5224D0474100EE047C /* GitCaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitCaller.swift; sourceTree = "<group>"; };
 		CFB47F5424D053F700EE047C /* UIViewControllerExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtention.swift; sourceTree = "<group>"; };
+		CFDA6684289D2FEE00B88067 /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
+		CFDA6686289D30AB00B88067 /* MintViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MintViewModel.swift; sourceTree = "<group>"; };
+		CFDA668B289D319700B88067 /* MintProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MintProtocol.swift; sourceTree = "<group>"; };
+		CFDA668D289D31DE00B88067 /* MintService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MintService.swift; sourceTree = "<group>"; };
+		CFDA6693289D391900B88067 /* Mint TestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mint TestTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFDA669E289D3D0800B88067 /* TableViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerTest.swift; sourceTree = "<group>"; };
+		CFDA66A6289D421500B88067 /* Mint TestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mint TestUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFDA66B1289D423900B88067 /* UILaunchTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILaunchTest.swift; sourceTree = "<group>"; };
+		CFDA66B5289D43BD00B88067 /* MintViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MintViewModelTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +79,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				456AAAFFCE17E13472F36D40 /* Pods_Mint_Test.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFDA6690289D391900B88067 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFDA66A3289D421500B88067 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +112,8 @@
 			isa = PBXGroup;
 			children = (
 				CF4547B624D0296700E2F88A /* Mint Test */,
+				CFDA6694289D391900B88067 /* Mint TestTests */,
+				CFDA66A7289D421500B88067 /* Mint TestUITests */,
 				CF4547B524D0296700E2F88A /* Products */,
 				574F38C7558CF311BD6DA06B /* Pods */,
 				E2A6E4017307E29EB9FC120A /* Frameworks */,
@@ -79,6 +124,8 @@
 			isa = PBXGroup;
 			children = (
 				CF4547B424D0296700E2F88A /* Mint Test.app */,
+				CFDA6693289D391900B88067 /* Mint TestTests.xctest */,
+				CFDA66A6289D421500B88067 /* Mint TestUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -86,17 +133,17 @@
 		CF4547B624D0296700E2F88A /* Mint Test */ = {
 			isa = PBXGroup;
 			children = (
+				CFDA6683289D2FD800B88067 /* ViewModel */,
 				CFB47F4F24D044B500EE047C /* Network */,
-				CFB47F4724D0404B00EE047C /* StartUpFiles */,
-				CF4547BB24D0296700E2F88A /* ViewController.swift */,
-				CF4547BD24D0296700E2F88A /* Main.storyboard */,
 				CFB47F4E24D0449400EE047C /* Models */,
+				CFB47F4724D0404B00EE047C /* StartUpFiles */,
+				CFDA6688289D30E000B88067 /* Extensions */,
+				CF4547BD24D0296700E2F88A /* Main.storyboard */,
 				CFB47F4524D03D8100EE047C /* TableViewCell.swift */,
 				CFB47F4324D03D5100EE047C /* TableViewController.swift */,
 				CF4547C024D0296800E2F88A /* Assets.xcassets */,
 				CF4547C224D0296800E2F88A /* LaunchScreen.storyboard */,
 				CF4547C524D0296800E2F88A /* Info.plist */,
-				CFB47F5424D053F700EE047C /* UIViewControllerExtention.swift */,
 			);
 			path = "Mint Test";
 			sourceTree = "<group>";
@@ -122,10 +169,69 @@
 		CFB47F4F24D044B500EE047C /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				CFDA668A289D317800B88067 /* Service */,
+				CFDA6689289D316C00B88067 /* Protocol */,
 				CFB47F5024D044F000EE047C /* NetworkResponseModel.swift */,
-				CFB47F5224D0474100EE047C /* GitCaller.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		CFDA6683289D2FD800B88067 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CFDA6684289D2FEE00B88067 /* Box.swift */,
+				CFDA6686289D30AB00B88067 /* MintViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CFDA6688289D30E000B88067 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CFB47F5424D053F700EE047C /* UIViewControllerExtention.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CFDA6689289D316C00B88067 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				CFDA668B289D319700B88067 /* MintProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		CFDA668A289D317800B88067 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				CFDA668D289D31DE00B88067 /* MintService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		CFDA6694289D391900B88067 /* Mint TestTests */ = {
+			isa = PBXGroup;
+			children = (
+				CFDA66B5289D43BD00B88067 /* MintViewModelTest.swift */,
+				CFDA66B4289D438F00B88067 /* ViewModel */,
+				CFDA669E289D3D0800B88067 /* TableViewControllerTest.swift */,
+			);
+			path = "Mint TestTests";
+			sourceTree = "<group>";
+		};
+		CFDA66A7289D421500B88067 /* Mint TestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CFDA66B1289D423900B88067 /* UILaunchTest.swift */,
+			);
+			path = "Mint TestUITests";
+			sourceTree = "<group>";
+		};
+		CFDA66B4289D438F00B88067 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		E2A6E4017307E29EB9FC120A /* Frameworks */ = {
@@ -158,18 +264,62 @@
 			productReference = CF4547B424D0296700E2F88A /* Mint Test.app */;
 			productType = "com.apple.product-type.application";
 		};
+		CFDA6692289D391900B88067 /* Mint TestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFDA6699289D391900B88067 /* Build configuration list for PBXNativeTarget "Mint TestTests" */;
+			buildPhases = (
+				CFDA668F289D391900B88067 /* Sources */,
+				CFDA6690289D391900B88067 /* Frameworks */,
+				CFDA6691289D391900B88067 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CFDA6698289D391900B88067 /* PBXTargetDependency */,
+			);
+			name = "Mint TestTests";
+			productName = "Mint TestTests";
+			productReference = CFDA6693289D391900B88067 /* Mint TestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CFDA66A5289D421500B88067 /* Mint TestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFDA66AE289D421500B88067 /* Build configuration list for PBXNativeTarget "Mint TestUITests" */;
+			buildPhases = (
+				CFDA66A2289D421500B88067 /* Sources */,
+				CFDA66A3289D421500B88067 /* Frameworks */,
+				CFDA66A4289D421500B88067 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CFDA66AD289D421500B88067 /* PBXTargetDependency */,
+			);
+			name = "Mint TestUITests";
+			productName = "Mint TestUITests";
+			productReference = CFDA66A6289D421500B88067 /* Mint TestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		CF4547AC24D0296700E2F88A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1160;
+				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1160;
 				ORGANIZATIONNAME = Maxwell;
 				TargetAttributes = {
 					CF4547B324D0296700E2F88A = {
 						CreatedOnToolsVersion = 11.6;
+					};
+					CFDA6692289D391900B88067 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = CF4547B324D0296700E2F88A;
+					};
+					CFDA66A5289D421500B88067 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = CF4547B324D0296700E2F88A;
 					};
 				};
 			};
@@ -187,6 +337,8 @@
 			projectRoot = "";
 			targets = (
 				CF4547B324D0296700E2F88A /* Mint Test */,
+				CFDA6692289D391900B88067 /* Mint TestTests */,
+				CFDA66A5289D421500B88067 /* Mint TestUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -199,6 +351,20 @@
 				CF4547C424D0296800E2F88A /* LaunchScreen.storyboard in Resources */,
 				CF4547C124D0296800E2F88A /* Assets.xcassets in Resources */,
 				CF4547BF24D0296700E2F88A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFDA6691289D391900B88067 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFDA66A4289D421500B88067 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,18 +419,50 @@
 			files = (
 				CFB47F4624D03D8100EE047C /* TableViewCell.swift in Sources */,
 				CFB47F5524D053F700EE047C /* UIViewControllerExtention.swift in Sources */,
+				CFDA6687289D30AB00B88067 /* MintViewModel.swift in Sources */,
+				CFDA668E289D31DE00B88067 /* MintService.swift in Sources */,
+				CFDA668C289D319700B88067 /* MintProtocol.swift in Sources */,
 				CFB47F5124D044F000EE047C /* NetworkResponseModel.swift in Sources */,
 				CFB47F4B24D0420200EE047C /* Commit.swift in Sources */,
-				CF4547BC24D0296700E2F88A /* ViewController.swift in Sources */,
 				CFB47F4D24D0430100EE047C /* CommitMessage.swift in Sources */,
 				CF4547B824D0296700E2F88A /* AppDelegate.swift in Sources */,
 				CF4547BA24D0296700E2F88A /* SceneDelegate.swift in Sources */,
 				CFB47F4424D03D5100EE047C /* TableViewController.swift in Sources */,
-				CFB47F5324D0474100EE047C /* GitCaller.swift in Sources */,
+				CFDA6685289D2FEE00B88067 /* Box.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFDA668F289D391900B88067 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFDA66B6289D43BD00B88067 /* MintViewModelTest.swift in Sources */,
+				CFDA669F289D3D0800B88067 /* TableViewControllerTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFDA66A2289D421500B88067 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFDA66B3289D42B000B88067 /* UILaunchTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CFDA6698289D391900B88067 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF4547B324D0296700E2F88A /* Mint Test */;
+			targetProxy = CFDA6697289D391900B88067 /* PBXContainerItemProxy */;
+		};
+		CFDA66AD289D421500B88067 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF4547B324D0296700E2F88A /* Mint Test */;
+			targetProxy = CFDA66AC289D421500B88067 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		CF4547BD24D0296700E2F88A /* Main.storyboard */ = {
@@ -438,6 +636,88 @@
 			};
 			name = Release;
 		};
+		CFDA669A289D391900B88067 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RTY98JFWDK;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.unit.co.Mint-TestTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mint Test.app/Mint Test";
+			};
+			name = Debug;
+		};
+		CFDA669B289D391900B88067 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RTY98JFWDK;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.unit.co.Mint-TestTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mint Test.app/Mint Test";
+			};
+			name = Release;
+		};
+		CFDA66AF289D421500B88067 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RTY98JFWDK;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.unit.co.Mint-TestUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Mint Test";
+			};
+			name = Debug;
+		};
+		CFDA66B0289D421500B88067 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RTY98JFWDK;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.unit.co.Mint-TestUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Mint Test";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -455,6 +735,24 @@
 			buildConfigurations = (
 				CF4547C924D0296800E2F88A /* Debug */,
 				CF4547CA24D0296800E2F88A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFDA6699289D391900B88067 /* Build configuration list for PBXNativeTarget "Mint TestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFDA669A289D391900B88067 /* Debug */,
+				CFDA669B289D391900B88067 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFDA66AE289D421500B88067 /* Build configuration list for PBXNativeTarget "Mint TestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFDA66AF289D421500B88067 /* Debug */,
+				CFDA66B0289D421500B88067 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
